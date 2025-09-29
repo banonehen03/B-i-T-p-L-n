@@ -2,7 +2,8 @@
 1 gioi thieu ban than
 <<<<<<< HEAD
 ....tat 
-hòa ngu
+hòa đẹp trai
+việt nguuu
 
 ....tat ... hoa
 viet
