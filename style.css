@@ -1,0 +1,129 @@
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+/* Nút mở menu */
+#menu-toggle {
+  font-size: 22px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Ẩn đi */
+  width: 250px;
+  height: 100%;
+  background: #34495e;
+  padding-top: 60px;
+  transition: 0.3s;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+  background: #1abc9c;
+}
+
+/* Nội dung chính */
+#main-content {
+  padding: 20px;
+  margin-left: 0;
+  transition: 0.3s;
+}
+
+.sidebar.active ~ #main-content {
+  margin-left: 250px;
+}
+
+/* Card phòng */
+.room-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.room-card {
+  background: #ecf9ff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 220px;
+}
+
+.room-card h3 {
+  margin: 0 0 10px 0;
+}
+
+.room-card p {
+  margin: 5px 0;
+}
+
+.room-card .price {
+  color: red;
+  font-weight: bold;
+}
+
+.room-card .buttons button {
+  margin: 5px 3px 0 0;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.pay { background: #27ae60; color: white; }
+button.view { background: #7f8c8d; color: white; }
+button.edit { background: #2980b9; color: white; }
+button.delete { background: #c0392b; color: white; }
