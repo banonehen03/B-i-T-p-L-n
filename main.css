@@ -112,7 +112,7 @@ body.dark-mode .navbar .btn-outline-danger {
     border-radius: 15px;
     padding: 20px;
     position: relative;
-    box-shadow: ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 
