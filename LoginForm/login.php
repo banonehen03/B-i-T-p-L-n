@@ -5,7 +5,7 @@ session_start();
 
 $serverName = "localhost"; 
 $database = "QuanLyPhongTro";
-$username = "sa";
+$username = "admin";
 $password = "123456";
 
 // Kết nối
