@@ -3,5 +3,5 @@ CREATE TABLE [dbo].[PhongTro] (
     [TenPhong] NVARCHAR(50) NOT NULL,
     [GiaPhong] DECIMAL(18, 2) NOT NULL,
     [DienTich] FLOAT NULL,
-    [TrangThai] NVARCHAR(50) NULL  -- VD: 'Trống', 'Đang thuê', 'Đang sửa'
+    [TrangThai] NVARCHAR(50) NULL  
 );
