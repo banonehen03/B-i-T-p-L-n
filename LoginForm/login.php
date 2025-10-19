@@ -4,7 +4,7 @@ ini_set('session.use_strict_mode', 1);
 session_start();
 
 $serverName = "localhost"; 
-$database = "QuanLyPhongTro";
+$database = "quanlyphongtro";
 $username = "admin";
 $password = "123456";
 
